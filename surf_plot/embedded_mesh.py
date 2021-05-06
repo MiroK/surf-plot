@@ -1,9 +1,6 @@
-from itertools import chain, dropwhile
-from make_mesh_cpp import make_mesh
-from collections import defaultdict
+from surf_plot.make_mesh_cpp import make_mesh
 import dolfin as df
 import numpy as np
-import operator
 
 
 class EmbeddedMesh(df.Mesh):

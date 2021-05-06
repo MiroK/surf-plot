@@ -1,5 +1,5 @@
 from dolfin import parameters, FunctionSpace, MPI
-from embedded_mesh import EmbeddedMesh
+from surf_plot.embedded_mesh import EmbeddedMesh
 import numpy as np
 
 

@@ -6,10 +6,14 @@ intermediate representation of data before plotting it as a piecewise constant
 function on the manifold.
 
 ## Dependencies
+- FEniCS 2019.1.0 or newer (it will work with 2017 if MPI stuff is adjusted, e.g. `MPI.comm_self`
 - VTK (there is Ubuntu package for it)
 - (Py)Evtk see [here](https://vtk.org/Wiki/VTK/Writing_VTK_files_using_python). Note
 that depending on how the package is installed you might need to change the imports
 in **vtk_io.py** from `import evtk` to `import pyevtk`
+
+## Installation
+Put `surf_plot` on PYTHONPATH
 
 ## Limitations
 - [ ] I only needed this for scalars so atm only scalar fields are supported

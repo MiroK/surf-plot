@@ -2,8 +2,8 @@
 
 from dolfin import *
 
-from vtk_io import DltWriter
-from dlt_embedding import P0surf_to_DLT0_map
+from surf_plot.vtk_io import DltWriter
+from surf_plot.dlt_embedding import P0surf_to_DLT0_map
 import numpy as np
 
 mesh = UnitCubeMesh(6, 6, 6)
