@@ -1,5 +1,9 @@
 # Surface plotting for FEniCS
 
+ <p align="center">
+    <img src="https://github.com/MiroK/surf-plot/blob/master/doc/logo.png">
+  </p>
+
 Simple plotting of X-d functions on (X-1)-d manifolds. The underlying idea
 is to use the order 0 Discontinuous Lagrange Trace space as an
 intermediate representation of data before plotting it as a piecewise constant
