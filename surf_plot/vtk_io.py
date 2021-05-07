@@ -56,6 +56,7 @@ class DltWriter(object):
         
             connectivity = cells.flatten()
             offsets = np.cumsum(np.repeat(3, ncells))            
+            connectivity = connectivity.astype(offsets.dtype)
             cell_types = VtkTriangle.tid*np.ones(ncells)
 
             self.write_vtu_piece = lambda data, counter, path=path, rank=rank, size=size:(
